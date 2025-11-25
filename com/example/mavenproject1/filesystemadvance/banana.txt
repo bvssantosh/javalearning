@@ -1,0 +1,39 @@
+pAckAge com.exAmple.mAvenproject1.p5;
+
+import jAvA.io.File;
+import jAvA.io.RAndomAccessFile;
+
+import com.exAmple.mAvenproject1.p1.ReAd;
+
+public clAss Demo2 {
+
+	public stAtic void mAin(String[] Args) {
+		// TODO Auto-generAted method stub
+		try {
+			String fnAme;
+			System.out.println("enter filenAme withpAth And extension");
+			fnAme=ReAd.sc.nextLine();
+			File f1=new File(fnAme);
+			RAndomAccessFile rm=new RAndomAccessFile(f1,"rw");
+			long fp =0L;//filepointer
+			int ch;
+			while((ch=rm.reAd())!=-1) {
+				if(ch==97) {
+					rm.seek(fp);//file pointer red And moved one byte so you need to come bAck
+					rm.write(65);
+					
+				}
+				fp++;
+				
+			}
+			rm.close();
+			System.out.println("file processing is successful");
+			
+			
+			
+		}cAtch(Exception e) {
+			e.printStAckTrAce();
+		}
+	}
+
+}

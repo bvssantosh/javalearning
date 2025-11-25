@@ -18,7 +18,7 @@ public class Demo3 {
 		FileOutputStream f2=new FileOutputStream("C:\\Users\\boddu.v\\eclipse-workspace\\mavenproject1\\src\\main\\java\\com\\example\\mavenproject1\\flesystem\\picture2.bmp");
 		int ch=0,i=0;
 		while((ch=f1.read())!=-1){
-			if(i<=500) {
+			if(i<=500) {	//UPTO 500 IT IS  meta data like name,x axis ,y-axis
 				f2.write(ch);
 				i++;
 				
