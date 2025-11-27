@@ -17,7 +17,6 @@ public class Selectionsort {
 	}
 	public void sorting() {
 		int j=0;
-		
 		while(j!=arr.length) {
 			int min=arr[j];
 			int mini=j;
@@ -27,9 +26,7 @@ public class Selectionsort {
 					mini=i;
 					
 				}
-				
-				
-			}
+}
 			int c=arr[j];
 			arr[j]=arr[mini];
 			arr[mini]=c;

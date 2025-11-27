@@ -18,7 +18,7 @@ public class Demo2 {
 		System.out.println("enter the date");
 		dt=sdf.parse(Read.sc.nextLine());
 		System.out.println(dt);//it will give like this output Tue Dec 23 00:00:00 IST 2025 is you dont use simpledateformat
-		System.out.println(sdf.format(dt));
+	//	System.out.println(sdf.format(dt));
 		
 		
 		
