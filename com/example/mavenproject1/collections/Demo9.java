@@ -11,6 +11,7 @@ public class Demo9 {
 		qu.add(100);
 		qu.push(150);
 		qu.add(300);
+		qu.push((120));
 	    System.out.println(qu);
 		System.out.println(qu.remove());
 		System.out.println(qu.pop());
